@@ -1,4 +1,10 @@
+[user]
+    name = Richard Friend
+    email = rik.friend@gmail.com
 [alias]
+	co = checkout
+	#One line git output
+	pl = log --pretty=format:\"%h - %an, %ar : %s\"
 	# View abbreviated SHA, description, and history graph of the latest 20 commits
 	l = log --pretty=oneline -n 20 --graph --abbrev-commit
 	# View the current working tree status using the short format
