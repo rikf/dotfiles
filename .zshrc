@@ -9,12 +9,6 @@ ZSH_THEME="agnoster"
 
 DEFAULT_USER=rikf
 
-for file in ~/.{exports,aliases,functions}; do
-	[ -r "$file" ] && [ -f "$file" ] && source "$file"
-done
-unset file
-
-
 # Example aliases
 alias zshconfig="st ~/.zshrc"
 alias ohmyzsh="st ~/.oh-my-zsh"
@@ -76,6 +70,11 @@ fi
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+
+for file in ~/.{exports,aliases,functions}; do
+	[ -r "$file" ] && [ -f "$file" ] && source "$file"
+done
+unset file
 
 
 # User configuration
